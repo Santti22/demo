@@ -1,0 +1,41 @@
+.banner {
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/laptop.png);
+    height: auto;
+    width: auto;
+}
+
+.banner > p {
+    
+}
+
+.row {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.imgs {
+    display: inline-block;
+    vertical-align: middle;
+    color: inherit;
+    width: 363px;
+    height: 224px;
+    line-height: 224px;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.img1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/col1.png);  
+}
+
+.img2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/col2.png);
+}
+
+.img3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/col3.png); 
+}
