@@ -5,8 +5,13 @@ const Home = () => {
     return (
         <div>
             <div className='banner'>
-                <p>software fueling digital marketing</p>
-                <p>Learn more</p>
+                <div className='shade'></div>
+                <div className='bannerItems'>
+                    <h1>Software fueling digital marketing</h1>
+                    <a href='https://www.lianatech.fi/' target='_blank' rel='noopener noreferrer'>
+                        <button>Learn more</button>
+                    </a>
+                </div>
             </div>
             <div className='row'>
                 <div className='img1 imgs'>Company</div>

@@ -1,13 +1,13 @@
 import React from "react";
 
-const NavTop = () => {
+const Header = () => {
     return (
         <div className="header">
             <div>Intra</div>
             <div>News</div>
-            <div>Search</div>
+            <div>Language select</div>
         </div>
     );
 };
 
-export default NavTop;
+export default Header;

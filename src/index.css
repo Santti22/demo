@@ -1,7 +1,8 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin-left: 10;
+  margin-right: 10;
+  margin-top: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,11 +14,50 @@ code {
 }
 
 .header {
+  display: flex;
+  justify-content: right;
+  padding-right: 9.453%;
+  align-items: center;
   background-color: #4c8930;
   color: #fff;
+  height: 40px;
+}
+
+.search-container {
+  position: absolute;
+  right: 0;
+  margin-right: 9.453%;
+}
+
+.search-container input {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 176px;
+  height: 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 .footer {
   background-color: #000;
   color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 50;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 12px;
 }
