@@ -3,6 +3,10 @@ import "./pages.css";
 import { useLanguage } from '../components/LanguageContext';
 import { FaSuitcase, FaUser, FaGlobe } from 'react-icons/fa';
 import FeedItems from '../components/FeedItems';
+import bosch from './img/bosch.png'
+import bodyShop from './img/thebodyshop.png'
+import laplandHotels from './img/laplandhotels.png'
+import ikea from './img/ikea.png'
 
 const Home = () => {
 
@@ -101,7 +105,35 @@ const Home = () => {
                     <FeedItems indexed={2} />
                 </div>
             </div>
-            <div>References</div>
+            <div>
+                <div className='title'>References</div>
+                <div className='row'>
+                    <div>
+                        <div>
+                            <img src={bosch} alt='bosch' />
+                        </div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src={bodyShop} alt='The Body Shop'/>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src={laplandHotels} alt='Lapland Hotels'/>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src={ikea} alt='Ikea'/>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
             <div>Reference images</div>
             <div>newsletter subscription</div>
         </div>

@@ -35,12 +35,14 @@ const FeedItems = ({indexed}) => {
         console.error(`Empty data: ${indexed}`)
         return <div>Empty data</div>
     }
-    console.log(rssFeed[0], rssFeed[1])
-    const formattedDate = rssFeed[indexed].date.toLocaleDateString('en-GB');
+
+    const dateString = rssFeed[indexed].date.toLocaleDateString('en-GB');
+    const dateArray = dateString.split('/');
+    const formattedDate = dateArray.join('.');
     return(
-            <div key={indexed}>
-                <div>{formattedDate}</div>
-                <div>{rssFeed[indexed].title}</div>
+            <div className="box" key={indexed}>
+                <div className="date">{formattedDate}</div>
+                <div className="newsText">{rssFeed[indexed].title}</div>
             </div>
     )
 }
