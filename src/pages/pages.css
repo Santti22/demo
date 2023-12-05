@@ -64,6 +64,7 @@ button {
     background-repeat: no-repeat;
     text-align: center;
 }
+
 .img1 {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/col1.png);
     background-position: center bottom;
@@ -114,7 +115,7 @@ button {
     text-align: center;
     padding-top: 57px;
     padding-bottom: 57px;
-    font-size: 2.5vw;
+    font-size: 2.5em;
 }
 
 .box {
@@ -129,11 +130,62 @@ button {
 .date {
     margin-top: 24px;
     margin-left: 24px;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .newsText {
     margin-top: 20px;
     margin-left: 24px;
+    margin-right: 24px;
+    font-size: 1.5em;
+}
+
+.refWrapper {
+    display: inline-block;
+    width: 267px;
+    height: 378px;
+    margin-left: 30px;
+    border: solid 1px;
+    border-radius: 2px;
+    margin-bottom: 60px;
+}
+
+.refTop {
+    height: 189px;
+    border-bottom: solid 1px;
+}
+
+.refBot {
+    height: 189px;
+    text-align: center;
+}
+.refImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.refTitle {
+    padding-top: 30px;
+    padding-bottom: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 20px;
+}
+
+.refText {
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyText {
+    width: 338px;
+    font-size: 1em;
+    text-align: center;
 }

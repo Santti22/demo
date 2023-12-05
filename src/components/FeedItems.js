@@ -32,8 +32,8 @@ const FeedItems = ({indexed}) => {
         return <div>Loading...</div>
     }
     if (rssFeed.length === 0 || indexed >= rssFeed.length) {
-        console.error(`Empty data: ${indexed}`)
-        return <div>Empty data</div>
+        console.error(`Error fetching data: ${indexed}`)
+        return <div>Error fetching data</div>
     }
 
     const dateString = rssFeed[indexed].date.toLocaleDateString('en-GB');

@@ -98,7 +98,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='newsContainer'>
-                <div className='title'>Latest news</div>
+                <div className='title'>{language === 'en' ? 'Latest news' : 'Tuoreimmat uutiset'}</div>
                 <div className='row'>
                     <FeedItems indexed={0} />
                     <FeedItems indexed={1} />
@@ -106,36 +106,58 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <div className='title'>References</div>
+                <div className='title'>{language === 'en' ? 'References' : 'Viitteet'}</div>
                 <div className='row'>
-                    <div>
-                        <div>
-                            <img src={bosch} alt='bosch' />
+                    <div className='refWrapper'>
+                        <div className='refTop'>
+                            <img className='refImg' src={bosch} alt='bosch' />
                         </div>
-                        <div></div>
+                        <div className='refBot'>
+                            <h1 className='refTitle'>Robert Bosch</h1>
+                            <p className='refText'>{language === 'en' ? 'Bosch is a multinational engineering and electronics company.' :
+                             'Bosch on monikansallinen teknillisen ja elektroniikan yritys.'}</p>
+                        </div>
                     </div>
-                    <div>
-                        <div>
-                            <img src={bodyShop} alt='The Body Shop'/>
+                    <div className='refWrapper'>
+                        <div className='refTop'>
+                            <img className='refImg' src={bodyShop} alt='The Body Shop'/>
                         </div>
-                        <div></div>
+                        <div className='refBot'>
+                            <h1 className='refTitle'>The Body Shop</h1>
+                            <p className='refText'>{language === 'en' ? 'The Body Shop is a global beauty brand and it has more than 3,000 stores in more than 60 countries.' :
+                             'The Body Shop on kansainvälinen muotiyhtiö, jolla on yli 3000 kauppaa yli 60 maassa.'}</p>
+                        </div>
                     </div>
-                    <div>
-                        <div>
-                            <img src={laplandHotels} alt='Lapland Hotels'/>
+                    <div className='refWrapper'>
+                        <div className='refTop'>
+                            <img className='refImg' src={laplandHotels} alt='Lapland Hotels'/>
                         </div>
-                        <div></div>
+                        <div className='refBot'>
+                            <h1 className='refTitle'>Lapland Hotels</h1>
+                            <p className='refText'>{language === 'en' ? 'Lapland Hotels is the largest and the most diverse hotel chain Lapland.' : 
+                            'Lapland Hotels on suurin ja monipuolisin hotelliketju lapissa.'}</p>
+                        </div>
                     </div>
-                    <div>
-                        <div>
-                            <img src={ikea} alt='Ikea'/>
+                    <div className='refWrapper'>
+                        <div className='refTop'>
+                            <img className='refImg' src={ikea} alt='Ikea'/>
                         </div>
-                        <div></div>
+                        <div className='refBot'>
+                            <h1 className='refTitle'>IKEA</h1>
+                            <p className='refText'>{language === 'en' ? 'IKEA is a multinational furniture store.' : 
+                            'IKEA on monikansalinen huonekaluliike.'}</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>Reference images</div>
-            <div>newsletter subscription</div>
+            <hr />
+            <div>
+                <div className='title'>{language === 'en' ? 'Subscribe to our newsletter' : 'Tilaa uutiskirjeemme'}</div>
+                <div className='container'>
+                    <div className='bodyText'>{language === 'en' ? 'Follow our story and get the latest promotonial news about our products and events.' : 
+                    'Seuraa tarinaamme ja saat tuoerimmat uutiset tuotteistamme ja tapahtumista.'}</div>
+                </div>
+            </div>
         </div>
     );
 };
