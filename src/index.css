@@ -13,6 +13,33 @@ code {
     monospace;
 }
 
+h1 {
+  font-size: 2em;
+  font-weight: 50;
+}
+
+h2 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 0.8em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
 .header {
   display: flex;
   justify-content: right;
@@ -32,6 +59,10 @@ code {
   border-radius: 4px;
 }
 
+.header a {
+  margin-right: 21px;
+}
+
 .search-container {
   position: absolute;
   right: 0;
@@ -39,7 +70,7 @@ code {
 }
 
 .search-container input {
-  background-color: #f0f0f0;
+  background-color: #fff;
   border: 1px solid #ccc;
   padding: 8px;
   width: 176px;
@@ -50,23 +81,57 @@ code {
 }
 
 .footer {
+  margin-top: 16px;
+  height: 270px;
   background-color: #000;
   color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: 50;
+.footer a {
+  margin-right: 5px;
 }
 
-h2 {
-  font-size: 20px;
+.footer p {
+  margin-top: 4px;
+  margin-bottom: 2px;
 }
 
-h3 {
-  font-size: 16px;
+.footerLT {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 128px;
 }
 
-p {
-  font-size: 12px;
+.footerLB {
+  text-align: left;
+  margin-left: 128px;
+}
+
+.footerRT {
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 128px;
+  display: flex;
+  justify-content: right;
+  font-size: 0.8em;
+}
+
+.footerRB {
+  text-align: right;
+  margin-right: 128px;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #4c8930;
+  padding: 8px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  float: right;
 }

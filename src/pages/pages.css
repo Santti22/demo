@@ -178,10 +178,22 @@ button {
     font-size: 16px;
 }
 
-.container {
+.centered {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 34px;
+}
+
+.centered input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 440px;
+    height: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
 .bodyText {

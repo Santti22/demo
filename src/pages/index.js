@@ -3,10 +3,12 @@ import "./pages.css";
 import { useLanguage } from '../components/LanguageContext';
 import { FaSuitcase, FaUser, FaGlobe } from 'react-icons/fa';
 import FeedItems from '../components/FeedItems';
+import NewsletterSub from '../components/NewsletterSub';
 import bosch from './img/bosch.png'
 import bodyShop from './img/thebodyshop.png'
 import laplandHotels from './img/laplandhotels.png'
 import ikea from './img/ikea.png'
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
 
@@ -76,9 +78,9 @@ const Home = () => {
                 </div>
             </div>
             <div className='row'>
-                <div className='img1 imgs'>{language === 'en' ? "Company" : "Yritys"}</div>
-                <div className='img2 imgs'>{language === 'en' ? "Products" : "Tuotteet"}</div>
-                <div className='img3 imgs'>{language === 'en' ? "Contact us" : "Ota yhteyttä"}</div>
+                <div className='img1 imgs'><NavLink to="/company">{language === 'en' ? "Company" : "Yritys"}</NavLink></div>
+                <div className='img2 imgs'><NavLink to="/products" activeStyle>{language === 'en' ? 'Products' : 'Tuotteet'} </NavLink></div>
+                <div className='img3 imgs'><NavLink to="/contact" activeStyle>{language === 'en' ? 'Contact us' : 'Ota yhteyttä'}</NavLink></div>
             </div>
             <div className='row' ref={rowRef}>
                 <div className='numbers' value={3000}>
@@ -153,10 +155,11 @@ const Home = () => {
             <hr />
             <div>
                 <div className='title'>{language === 'en' ? 'Subscribe to our newsletter' : 'Tilaa uutiskirjeemme'}</div>
-                <div className='container'>
+                <div className='centered'>
                     <div className='bodyText'>{language === 'en' ? 'Follow our story and get the latest promotonial news about our products and events.' : 
                     'Seuraa tarinaamme ja saat tuoerimmat uutiset tuotteistamme ja tapahtumista.'}</div>
                 </div>
+                <NewsletterSub />
             </div>
         </div>
     );
